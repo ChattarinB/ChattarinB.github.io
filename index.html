@@ -1,51 +1,71 @@
 <!DOCTYPE html>
-<html lang="en, th">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Webpage</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/77c5ce1df3.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar" class="nav-bar">
-        <a href="#About">About</a>
-        <a href="#Work">Work</a>
-        <a href="#Contact">Contact</a>
+        <ul class="nav-list">
+            <li><a href="#welcome">About</a></li>
+            <li><a href="#works">Work</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
     </nav>
     <main>
-        <section id="welcome-section" class="about-section">
+        <section id="welcome" class="about-section">
             <div class="about-header">
-                <h1>Hello -------------</h1>
-                <h2>I AM CHATTARIN BOONYARITH</h2>
-                <p>Nice to meet you! Let me introduce myself.</p>
-                <p>I graduated in Learning Science and Education from Thammasat University.I worked at Aksorn Nex company as an executive learning solution development. My primary responsibility is to develops teachers in certain topics such as STEAM ed, Computer Science, coding, mostly about how to implement technologies (e.g. Python, Scratch, Micro.bit, etc.) into their curriculums. I've worked with great professors and co-workers trying to come up with the best curriculum to improve skills of teachers in school. for 1 year I have trained teachers in various topics for about 26 times, all of my training received positive feedback from participated teachers. Other than training/teaching, my works also consist of PR, FB admin, project coordinator, co-create online courses, podcast and show for the company.</p>
-                <button>Hire me</button><button>Get CV</button>
+                <h1>Hello, I'm Chattarin Boonyarith.</h1>
+                <h1>Nice to meet you! Let me introduce myself.</h1>
+                <div class="about-paragraph">
+                    <p><span class="big">I</span> graduated in Learning Science and Education from Thammasat University.</p>
+                    <p><span class="big">I</span> worked at Aksorn Nex company as an executive learning solution development.</p>
+                    <p><span class="big">M</span>y primary responsibility is to develops teachers in certain topics such as STEAM ed, Computer Science, coding, mostly about how to implement technologies (e.g. Python, Scratch, Micro.bit, etc.) into their curriculums. I've worked with great professors and co-workers trying to come up with the best curriculum to improve skills of teachers in school.</p>
+                    <p><span class="big">I</span>n 1 year I have trained teachers in various topics for about 26 times, all of my training received positive feedback from participated teachers.</p>
+                    <p><span class="big">O</span>ther than training/teaching, my works also consist of PR, FB admin, project coordinator, co-create online courses, podcast and show for the company.</p>
+                    <p><span class="big">I</span>'m also interested in software development, so I am learning about programing software and website (such as this one).</p>
+                </div>
             </div>
         </section>
-        <section id="projects" class="work-section">
+        <section id="works" class="work-section">
             <div class="work-header">
                 <h2>These are some of my projects</h2>
             </div>
-            <div id="work-panel" class="work-panel">
-                <div><img class="" src="https://drive.google.com/uc?export=view&id=177R1pbDOwNk683pYJBgA_BxSSr4qc07W" alt="speaker"><p class="code"><</p><p class="project-tile">Speaker on various topics such asSTEAM ed, Computer Science, coding.</p><p class="code">/></p></div>
-                <div><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine"><p class="code"><</p><p class="project-tile">Random Quote Machine</p><p class="code">/></p></div>
-                <div><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator"><p class="code"><</p><p class="project-tile">JavaScript Calculator</p><p class="code">/></p></div>
+            <div class="work-flex" id="lecturer">
+                <img class="work-image" src="https://drive.google.com/uc?export=view&id=177R1pbDOwNk683pYJBgA_BxSSr4qc07W" />
+                <img class="work-image" src="https://drive.google.com/uc?export=view&id=1TLOyg0-uytssIfg66af9jtNbLFgunjAj" />
+                <img class="work-image" src="https://drive.google.com/uc?export=view&id=1BzE0NnTvquuLe6nJFBpPiMRlR9JApjAT" />
             </div>
+            <p>Assistant lecturer / lecturer / project-coordinator in various topics.</p>
+            <div class="work-flex" id="show">
+                <img class="work-image" src="https://drive.google.com/uc?export=view&id=1vBFzuL1OzKEBxj-ua21nIhexDXh_rX87" />
+                <img class="work-image" src="https://drive.google.com/uc?export=view&id=1xYgZsNVhyXKamOJ_pJs-nG43yMfe-p0u" />
+            </div>
+            <p>Co-create show/podcast related to education field.</p>
+            <div class="work-flex" id="training">
+                <iframe class="work-image" src="https://drive.google.com/file/d/1s6qtSyZkPoqaMGZDJ-jhUKBTB8UHTwut/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+            <p>Products training for salesmen.Mostly related to coding and technologies.</p>
         </section>
         <section id="Contact" class="contact-section">
             <div class="contact-header">
+                <h3>I hope my experience satisfy your expectation!</h3>
                 <h3>Let's work together...</h3>
-                <p>How do you take your coffee?</p>
+                <p>Contact me via links below.</p>
             </div>
             <div class="contact-link">
-                <a class="profile-link" id="profile-link" target="_blank" href="https://www.facebook.com/Peter1509Dawson"><i class="fab fa-facebook-square"></i>Facebook</a>
-                <a class="profile-link" id="profile-link" target="_blank" href="https://github.com/ChattarinB"><i class="fab fa-github"></i>GitHub</a>
-                <a class="profile-link" id="profile-link" target="_blank" href="https://www.linkedin.com/in/chattarin-boonyarith/"><i class="fa-brands fa-linkedin"></i></i>Linkedin</a>
-                <a class="profile-link" id="profile-link" target="_blank" href="iceice1223@gmail.com"><i class="fas fa-at"></i>Send a mail</a>
-                <a class="profile-link" id="profile-link" target="_blank" href="tel:081-803-9838"><i class="fas fa-mobile-alt"></i>Call me</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="https://www.facebook.com/Peter1509Dawson"><i class="fab fa-facebook-square"></i>Facebook</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="https://line.me/ti/p/~sponksponk"><i class="fab fa-line"></i>Line</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="https://github.com/ChattarinB"><i class="fab fa-github"></i>GitHub</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="https://www.linkedin.com/in/chattarin-boonyarith"><i class="fab fa-linkedin"></i>Linkedin</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="iceice1223@gmail.com"><i class="fas fa-at"></i>Send a mail</a>
+                <a class="contact-details btn" id="profile-link" target="_blank" href="tel:081-803-9838"><i class="fas fa-mobile-alt"></i>Call me</a>
             </div>
         </section>
     </main>
