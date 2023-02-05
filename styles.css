@@ -1,70 +1,151 @@
 :root {
     --background-color1: #3a3d40;
     --background-color2: #45567d;
-    --background-color3: red;
+    --background-color-red: red;
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
 }
 
 .nav-bar {
-    background-color: var(--background-color3);
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+    height: 80px;
+    background-color: var(--background-color-red);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+    .nav-list a {
+        display: block;
+        font-size: 2.2rem;
+        padding: 2rem;
+    }
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+li {
+    display: list-item;
 }
 
 main {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     background-color: var(--background-color1);
 }
 
 .about-header h1 {
     font-weight: bold;
+    font-size: 6rem;
     margin-bottom: 0;
 }
 
-.about-header p {
-    margin-top: 0;
+.about-paragraph {
+    font-size: 2rem;
+    margin: 30px auto;
+    width: calc(100% - 60rem);
+    text-align: justify;
+}
+
+.big {
+    font-size: 3rem;
 }
 
 .work-section {
-    background-color: var(--background-color2);
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
 }
 
 .work-header h2 {
+    font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
     color: white;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
 }
 
-.work-panel {
-    display: inline-block;
+.work-flex {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
 }
 
-.work-link {
-    display: inline-block;
-    text-align: center;
-    background-color: gray;
-    text-decoration: none;
-    padding-bottom: 10px;
+.work-image {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
 }
 
-    .work-link img {
-        width: 350px;
-        height: 300px;
-        display: block;
-    }
+.work-section p {
+    padding-bottom: 50px;
+}
 
-    .work-link:hover .code {
-        color: orange;
-    }
-
-    .work-link p {
-        display: inline;
-    }
+img {
+    display: block;
+    width: 100%;
+}
 
 .code {
     color: gray;
@@ -73,6 +154,14 @@ main {
 }
 
 .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 2rem;
     background-color: var(--background-color1)
 }
 
@@ -83,7 +172,7 @@ main {
 
     .contact-header h3 {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 6rem;
     }
 
     .contact-header p {
@@ -91,8 +180,32 @@ main {
         margin: 0;
     }
 
+.contact-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
 @media (max-width : 400px) {
     .work-panel {
         display: block;
+    }
+
+    .work-image {
+        flex: 1;
     }
 }
