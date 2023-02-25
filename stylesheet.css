@@ -52,11 +52,6 @@ a {
     text-decoration: none;
     color: var(--main-white);
 }
-
-img {
-    display: block;
-    width: 100%;
-}
 .nav-bar {
     display: flex;
     justify-content: flex-end;
@@ -123,7 +118,7 @@ main {
 .about-paragraph {    
     margin: 30px auto;
     width: 70%;
-    text-align: left;
+    text-align: justify;
 }
 .about-paragraph p {
     font-size: 2rem;
@@ -134,7 +129,7 @@ main {
 }
 @media (max-width: 28.75em) {
     h1,h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .about-section {
         height: 100%;
@@ -167,18 +162,14 @@ main {
     justify-content: center;
 }
 .work-image {
-    max-width: 30%;
-    max-height: 15%;
-    object-fit: cover;
+    width: 30%;
+    height: 300px;
     padding: 0;
     margin: 0;
+    object-fit:fill;
 }
 .work-section p {
     padding-bottom: 2rem;
-}
-img {
-    display: block;
-    width: 100%;
 }
 .code {
   color: gray;
