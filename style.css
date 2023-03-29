@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+:root {
+    --main-color: #FF0000;
+    --comp-color1: #FF4D4D;
+    --comp-color2: #800000;
+    --comp-color3: #802626;
+    --comp-color4: #CC0000;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.75em;
+}
+i {
+    font-size: 1.25em;
+    padding: 0.25em;
+}
+.bold {
+    font-weight: bold;
+    font-size: 1em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    background-color: var(--comp-color2);
+    position: fixed;
+}
+nav ul {
+    position: fixed;
+    top: 25px;
+    right: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+nav a {
+    text-decoration: underline;
+    color: var(--comp-color1);
+    font-size: 1.75em;
+}
+#about {
+    padding: 100px;    
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+    color: var(--comp-color2);
+}
+#about h1 {    
+    text-align: center;
+    padding-top: 30px;
+}
+#about p {
+    text-align: justify;
+    height: 90%;
+}
+#profilePic {    
+    display: block;
+    height: 350px;
+    width: 300px;
+    border-radius: 50% 50%;
+    margin: 20px auto;
+    object-fit: cover;    
+}
+#projects {
+    background-color: var(--comp-color4);
+    padding: 100px 0;
+    height: 100%;
+    width: 100%;
+    color: var(--comp-color1);
+}
+#projects h2 {
+    text-align: center;
+    padding: 30px 0;    
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projectPic {
+    object-fit: fill;
+    max-height: 320px;
+    width: 350px;
+}
+.projectDes {
+    text-align: center;
+    padding: 5px 0 30px 0;
+    min-width: 320px;
+}
+#contact {
+    background-color: var(--main-color);
+    color: var(--comp-color2);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 25% 0;
+}
+#contact a {
+    margin: 30px;
+    font-size: 24px;
+    color: var(--comp-color2);
+}
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    i {
+        font-size: 1.25em;
+    }
+    nav ul {
+        right: -1rem;
+    }
+    #about {
+        padding: 100px 0;
+    }
+    #about p {
+        text-align: left;
+        margin: auto;
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (max-width:375px) {
+    nav {
+        min-width: 320px;
+    }
+    ul {
+        min-width: 320px;
+    }
+    nav a {
+        font-size: 1.25em;
+    }
+    section {
+        min-width: 320px;
+    }
+    .projectPic {
+        width: 100%;
+        height: auto;
+    }
+}
